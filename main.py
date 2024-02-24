@@ -12,3 +12,8 @@ gcd = find_gcd(num1, num2)
 
 print(f"НСД({num1}, {num2}) = {gcd}
 
+from utils.py import unique_n
+a, b = map(int, input().split())
+result = [str(num) for num in range(a, b + 1) if unique_n(num)]
+
+print(*result)
