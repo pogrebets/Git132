@@ -17,3 +17,9 @@ a, b = map(int, input().split())
 result = [str(num) for num in range(a, b + 1) if unique_n(num)]
 
 print(*result)
+from utils.py import is_prime:
+num = int(input("Введіть число: "))
+if is_prime(num):
+    print(f"{num} є простим числом.")
+else:
+    print(f"{num} є складним числом.")
